@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Gestión Académica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                Portal Académico
+            </a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">
+                            Cursos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#noticias">
+                            Noticias
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex gap-2">
+
+                    <a href="#" class="btn btn-light">
+                        Iniciar Sesión
+                    </a>
+
+                    <a href="#" class="btn btn-warning">
+                        Registrarse
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <h1>
+                    Bienvenido al Portal Académico
+                </h1>
+
+                <p>
+                    Consulta tus cursos, revisa tus actividades
+                    y mantente informado sobre las novedades
+                    de tu universidad.
+                </p>
+
+                <a href="#cursos" class="btn btn-primary">
+                    Ver cursos
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="img/images.jpg" alt="Imagen de la universidad">
+            </div>
+
+        </section>
+
+        <section id="cursos" class="cursos">
+
+            <h2>
+                Cursos Ofertados
+            </h2>
+            <p class="descripcion">
+                Conoce algunos de los cursos disponibles.
+            </p>
+            <div class="card-grid">
+                <div class="curso-card">
+                    <h3>
+                        Ingeniería de Sistemas
+                    </h3>
+                    <p>
+                        Introducción al desarrollo de sistemas
+                        y tecnologías informáticas.
+                    </p>
+                    <button class="btn btn-primary">
+                        Ver curso
+                    </button>
+                </div>
+                <div class="curso-card">
+                    <h3>
+                        Matemática
+                    </h3>
+                    <p>
+                        Desarrollo de conocimientos matemáticos
+                        aplicados a la ingeniería.
+                    </p>
+                    <button class="btn btn-primary">
+                        Ver curso
+                    </button>
+
+                </div>
+                <div class="curso-card">
+                    <h3>
+                        Programación
+                    </h3>
+                    <p>
+                        Fundamentos para desarrollar programas
+                        utilizando diferentes lenguajes.
+                    </p>
+
+                    <button class="btn btn-primary">
+                        Ver curso
+                    </button>
+
+                </div>
+                <div class="curso-card">
+                    <h3>
+                        Base de Datos
+                    </h3>
+                    <p>
+                        Introducción al almacenamiento y manejo
+                        de información.
+                    </p>
+                    <button class="btn btn-primary">
+                        Ver curso
+                    </button>
+
+                </div>
+                <div class="curso-card">
+                    <h3>
+                        Redes
+                    </h3>
+                    <p>
+                        Conceptos básicos sobre comunicación
+                        entre dispositivos y redes.
+                    </p>
+                    <button class="btn btn-primary">
+                        Ver curso
+                    </button>
+                </div>
+                <div class="curso-card">
+
+                    <h3>
+                        Ingeniería de Software
+                    </h3>
+
+                    <p>
+                        Principios para planificar y desarrollar
+                        proyectos de software.
+                    </p>
+
+                    <button class="btn btn-primary">
+                        Ver curso
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section id="noticias" class="noticias">
+
+            <h2>
+                Noticias y Eventos
+            </h2>
+
+            <div class="row g-4 mt-2">
+                <div class="col-md-6">
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">
+                                Inicio del semestre
+                            </h3>
+
+                            <p class="card-text">
+                                Conoce las fechas importantes
+                                para el inicio del semestre académico.
+                            </p>
+
+                            <button class="btn btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modalNoticia">
+
+                                Más información
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">
+                                Feria tecnológica
+                            </h3>
+
+                            <p class="card-text">
+                                Participa en las actividades
+                                relacionadas con tecnología e innovación.
+                            </p>
+
+                            <button class="btn btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modalNoticia">
+
+                                Más información
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="modal fade" id="modalNoticia" tabindex="-1">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        Información
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+
+                <div class="modal-body">
+
+                    <p>
+                        Para obtener más información sobre
+                        las actividades académicas, revisa
+                        el calendario de la universidad.
+                    </p>
+
+                </div>
+
+
+                <div class="modal-footer">
+
+                    <button type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+
+                        Cerrar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
