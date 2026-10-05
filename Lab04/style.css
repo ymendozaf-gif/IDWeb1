@@ -1,48 +1,28 @@
-
-
 body {
     min-height: 100vh;
 }
-
-
-/* Espacio entre las tareas */
 
 #todo-list {
     margin-top: 10px;
 }
 
-
-/* Cada tarea */
-
 .task-item {
     margin-bottom: 10px;
 }
-
-
-/* Tarea completada */
 
 .task-completed {
     text-decoration: line-through;
     opacity: 0.6;
 }
 
-
-/* Información de la tarea */
-
 .task-info {
     display: flex;
     flex-direction: column;
 }
 
-
-/* Botones de la tarea */
-
 .task-buttons {
     margin-top: 10px;
 }
-
-
-/* Mensajes */
 
 #alertas {
     margin-bottom: 15px;

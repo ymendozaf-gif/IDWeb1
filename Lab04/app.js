@@ -117,9 +117,7 @@ form.addEventListener('submit', (e) => {
 });
 
 function toggleTask(id) {
-    const task = tasks.find(
-        (task) => task.id === id
-    );
+    const task = tasks.find((task) => task.id === id);
 
     if (task) {
         task.completada = !task.completada;
@@ -130,9 +128,7 @@ function toggleTask(id) {
 
 function deleteTask(id) {
 
-    tasks = tasks.filter(
-        (task) => task.id !== id
-    );
+    tasks = tasks.filter((task) => task.id !== id);
     saveTasks();
     renderTasks();
 }
@@ -143,17 +139,13 @@ btnTodas.addEventListener('click', () => {
 
 btnPendientes.addEventListener('click', () => {
 
-    const pendientes = tasks.filter(
-        (task) => !task.completada
-    );
+    const pendientes = tasks.filter((task) => !task.completada);
     renderTasks(pendientes);
 });
 
 btnCompletadas.addEventListener('click', () => {
 
-    const completadas = tasks.filter(
-        (task) => task.completada
-    );
+    const completadas = tasks.filter((task) => task.completada);
     renderTasks(completadas);
 });
 
